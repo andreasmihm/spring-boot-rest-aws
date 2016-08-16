@@ -16,7 +16,7 @@ public class GreetingController {
 
     @RequestMapping(method = RequestMethod.GET)
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-		PiSlow.calc();
+		//PiSlow.calc();
 		return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
