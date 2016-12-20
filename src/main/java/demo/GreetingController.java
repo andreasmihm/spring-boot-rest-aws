@@ -23,6 +23,8 @@ public class GreetingController {
 	
 	@RequestMapping(method = RequestMethod.POST)
 	public Greeting add(@RequestBody Greeting greeting) {
+		Greeting g1 = new Greeting(1, "fjh");
+		g1.getContent();
 	   return greeting;
 	}
 }
