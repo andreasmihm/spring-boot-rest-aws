@@ -9,6 +9,9 @@ This github project contains all the code that goes along with the article on my
 
 
 Instructions
+
 mvn clean install
+
 mvn spring-boot:run
+
 http://localhost:8080/greeting
