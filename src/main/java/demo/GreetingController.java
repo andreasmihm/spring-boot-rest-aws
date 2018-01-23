@@ -18,12 +18,12 @@ public class GreetingController {
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
 		//PiSlow.calc();
 		return new Greeting(counter.incrementAndGet(),
-                            String.format(template, name));
+                            String.format(template, name), "blah text");
     }
 	
 	@RequestMapping(method = RequestMethod.POST)
 	public Greeting add(@RequestBody Greeting greeting) {
-		Greeting g1 = new Greeting(1, "fjh");
+		Greeting g1 = new Greeting(1, "fjh", "more blah text");
 		g1.getContent();
 	   return greeting;
 	}

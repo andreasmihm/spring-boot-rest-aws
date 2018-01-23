@@ -18,8 +18,9 @@ public class SpringBootAwsApplicationTests {
 	
 	@Test
 	public void testGreeting() {
-		Greeting greet = new Greeting(1, "Hello");
+		Greeting greet = new Greeting(1, "Hello","Blah");
 		Assert.assertEquals(greet.getContent(), "Hello");
+		Assert.assertEquals(greet.getContent(), "Blah");
 		Assert.assertEquals(greet.getId(), 1);
 		
 	}
